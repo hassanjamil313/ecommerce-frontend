@@ -1,0 +1,211 @@
+/* AdminDashboard.css – Professional Design */
+
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f3f4f6;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========== Sidebar ========== */
+.admin-sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar-content {
+    flex: 1;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.admin-sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #334155;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.welcome-message {
+    font-size: 1rem;
+    color: #facc15;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+.welcome-message i {
+    font-size: 1.2rem;
+}
+
+.admin-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-sidebar nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.admin-sidebar nav ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+
+.admin-sidebar nav ul li a i {
+    width: 24px;
+    font-size: 1.2rem;
+    color: #94a3b8;
+    transition: color 0.2s;
+}
+
+.admin-sidebar nav ul li a:hover {
+    background: #334155;
+    color: white;
+}
+
+.admin-sidebar nav ul li a:hover i {
+    color: #facc15;
+}
+
+/* Active link (optional, requires NavLink) */
+.admin-sidebar nav ul li a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.admin-sidebar nav ul li a.active i {
+    color: white;
+}
+
+/* Sidebar footer with logout button */
+.sidebar-footer {
+    padding: 1rem;
+    border-top: 1px solid #334155;
+}
+
+.sidebar-footer .logout-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.sidebar-footer .logout-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* ========== Main Content ========== */
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+    background: #f3f4f6;
+    overflow-y: auto;
+}
+
+.admin-content h1,
+.admin-content h2 {
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.admin-welcome {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: #64748b;
+}
+/* Sidebar welcome message with avatar */
+.welcome-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border: 1px solid #334155;
+    color: #facc15;
+    font-size: 1rem;
+}
+
+.sidebar-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #facc15;
+}
+
+/* Ensure icons and text align properly in nav links */
+.admin-sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.admin-sidebar nav ul li a i {
+    width: 24px;
+    font-size: 1.2rem;
+    color: #94a3b8;
+    transition: color 0.2s;
+}
+
+.admin-sidebar nav ul li a:hover {
+    background: #334155;
+    color: white;
+}
+
+.admin-sidebar nav ul li a:hover i {
+    color: #facc15;
+}
+
+/* Active link (if using NavLink) – optional */
+.admin-sidebar nav ul li a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.admin-sidebar nav ul li a.active i {
+    color: white;
+}

@@ -1,0 +1,274 @@
+/* AdminDashboardHome.css – Professional Modern Design */
+
+.admin-dashboard-home {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e4eaf1 100%);
+  min-height: 100vh;
+}
+
+.admin-dashboard-home h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+}
+.admin-dashboard-home h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+/* Stats Cards Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+  border-radius: 24px 24px 0 0;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 45px -12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.stat-card .stat-value {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Recent Orders Section */
+.recent-orders {
+  background: white;
+  border-radius: 28px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+.recent-orders h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.recent-orders-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+.recent-orders-table th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  background: transparent;
+  border: none;
+}
+
+.recent-orders-table td {
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.recent-orders-table tr:hover td {
+  background: #f1f5f9;
+  transform: scale(1.01);
+  transition: all 0.2s;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 90px;
+  letter-spacing: 0.02em;
+}
+
+.status-pending {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #78350f;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+}
+.status-processing {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  color: #1e3a8a;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+.status-shipped {
+  background: linear-gradient(135deg, #c084fc, #8b5cf6);
+  color: #4c1d95;
+  box-shadow: 0 2px 4px rgba(139, 92, 246, 0.2);
+}
+.status-delivered {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  color: #064e3b;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+}
+.status-cancelled {
+  background: linear-gradient(135deg, #f87171, #ef4444);
+  color: #7f1d1d;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+}
+
+/* Charts Section */
+.charts-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  transition: transform 0.2s;
+}
+
+.chart-container:hover {
+  transform: translateY(-4px);
+}
+
+.chart-container h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.status-list, .monthly-sales {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.status-item, .sales-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1.2rem;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+  border-radius: 16px;
+  font-weight: 500;
+  border-left: 4px solid;
+  transition: all 0.2s;
+}
+
+.status-item:hover, .sales-item:hover {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+}
+
+.status-label, .month {
+  color: #1e293b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-count, .amount {
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.1rem;
+}
+
+/* Assign different left border colors */
+.status-item[data-status="Pending"] { border-left-color: #f59e0b; }
+.status-item[data-status="Processing"] { border-left-color: #3b82f6; }
+.status-item[data-status="Shipped"] { border-left-color: #8b5cf6; }
+.status-item[data-status="Delivered"] { border-left-color: #10b981; }
+.status-item[data-status="Cancelled"] { border-left-color: #ef4444; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-home {
+    padding: 1rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .recent-orders {
+    padding: 1.5rem;
+    overflow-x: auto;
+  }
+  .recent-orders-table {
+    min-width: 700px;
+  }
+}

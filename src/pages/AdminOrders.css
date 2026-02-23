@@ -1,0 +1,127 @@
+/* AdminOrders.css – Professional Modern Design */
+
+.admin-orders {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e4eaf1 100%);
+  min-height: 100vh;
+}
+
+.admin-orders h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+}
+.admin-orders h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.orders-table-container {
+  background: white;
+  border-radius: 28px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  min-width: 900px;
+}
+
+.orders-table th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  background: transparent;
+  border: none;
+}
+
+.orders-table td {
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  color: #1e293b;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.orders-table tr:hover td {
+  background: #f1f5f9;
+  transform: scale(1.01);
+  transition: all 0.2s;
+}
+
+.status-select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+.status-select:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.1);
+}
+.status-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+}
+
+/* reuse status badges from dashboard home */
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 90px;
+  letter-spacing: 0.02em;
+}
+
+.status-pending {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #78350f;
+  box-shadow: 0 2px 4px rgba(245, 158, 11, 0.2);
+}
+.status-processing {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  color: #1e3a8a;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+.status-shipped {
+  background: linear-gradient(135deg, #c084fc, #8b5cf6);
+  color: #4c1d95;
+  box-shadow: 0 2px 4px rgba(139, 92, 246, 0.2);
+}
+.status-delivered {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  color: #064e3b;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+}
+.status-cancelled {
+  background: linear-gradient(135deg, #f87171, #ef4444);
+  color: #7f1d1d;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+}

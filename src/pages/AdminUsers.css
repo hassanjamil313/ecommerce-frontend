@@ -1,0 +1,137 @@
+/* AdminUsers.css – Professional Modern Design */
+
+.admin-users {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e4eaf1 100%);
+  min-height: 100vh;
+}
+
+.admin-users h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  position: relative;
+  display: inline-block;
+}
+.admin-users h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 28px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  min-width: 800px;
+}
+
+.users-table th {
+  text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  background: transparent;
+  border: none;
+}
+
+.users-table td {
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  color: #1e293b;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.users-table tr:hover td {
+  background: #f1f5f9;
+  transform: scale(1.01);
+  transition: all 0.2s;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  min-width: 80px;
+  color: white;
+}
+
+.role-admin {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+.role-customer {
+  background: linear-gradient(135deg, #64748b, #475569);
+  box-shadow: 0 2px 4px rgba(100, 116, 139, 0.2);
+}
+
+.btn-role {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+.btn-role:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+.btn-role:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+}
+.btn-delete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+}
+
+.self-action-disabled {
+  color: #94a3b8;
+  font-style: italic;
+  padding: 0.4rem 0.5rem;
+  display: inline-block;
+}

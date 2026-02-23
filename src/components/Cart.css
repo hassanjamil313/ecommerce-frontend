@@ -1,0 +1,212 @@
+/* Cart.css – Professional Shopping Cart */
+
+.cart-page {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  min-height: 100vh;
+}
+
+.cart-page h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.cart-page h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 2px;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 4rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+.empty-cart p {
+  color: #64748b;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.empty-cart a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+.empty-cart a:hover {
+  border-bottom-color: #3b82f6;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cart-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -8px rgba(0, 0, 0, 0.15);
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #f1f5f9;
+}
+
+.cart-item-details {
+  flex: 2;
+}
+.cart-item-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+.cart-item-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #10b981;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.cart-item-actions button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-item-actions button:hover {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+.cart-item-actions span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
+}
+
+.remove-btn {
+  background: #fee2e2 !important;
+  color: #ef4444 !important;
+  border: 1px solid #fecaca !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 30px !important;
+  font-size: 0.9rem !important;
+  gap: 0.3rem;
+  margin-left: 1rem;
+}
+.remove-btn:hover {
+  background: #ef4444 !important;
+  color: white !important;
+  border-color: #ef4444 !important;
+}
+
+.cart-item-total {
+  text-align: right;
+  min-width: 100px;
+}
+.cart-item-total strong {
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.cart-summary {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: right;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+.cart-summary h3 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.checkout-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 8px 16px -6px #059669;
+}
+.checkout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px #059669;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-page {
+    padding: 1rem;
+  }
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .cart-item-actions {
+    justify-content: center;
+  }
+  .cart-item-total {
+    text-align: center;
+  }
+  .cart-summary {
+    text-align: center;
+  }
+}
